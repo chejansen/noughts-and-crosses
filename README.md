@@ -1,6 +1,6 @@
 # Basic Isomorphic App
 
-Sample Universal React implementation - Independent repo approach
+Sample Universal React implementation
 
 ### Run in dev mode: Webpack dev server with HMR
 
