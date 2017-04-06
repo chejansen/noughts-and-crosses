@@ -1,0 +1,33 @@
+body {
+  margin: 0;
+}
+
+.page {
+  border-top: 100px solid #222;
+  border-bottom: 50px solid #222;
+  display: block;
+  padding-bottom: 300px;
+}
+
+h1 {
+  font-family: oswald;
+  font-size: 3rem;
+  color: teal;
+  text-align: center;
+}
+
+a {
+  text-decoration: none;
+
+  button {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: none;
+    background-color: #0058ff;
+    color: white;
+    font-size: 1.2rem;
+    display: block;
+    margin: 50px auto;
+  }
+}
