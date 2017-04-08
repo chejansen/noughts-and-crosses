@@ -1,12 +1,12 @@
 import React from 'react';
-import Header from '../header';
-import Grid from '../grid';
+import TallyArea from '../tally-area';
+import PlayArea from '../play-area';
 
 const Home = () => (
 	<div className='page'>
-		<Header title='Hi Lounge Buddy' />
-		<Grid/>
+		<TallyArea/>
+		<PlayArea/>
 	</div>
 );
 
-export default Home;
+export default Home

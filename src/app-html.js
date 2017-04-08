@@ -4,7 +4,6 @@ import { createStore } from 'redux';
 import { Provider } from 'react-redux';
 import { RouterContext } from 'react-router';
 import reducers from './reducers';
-
 const renderApp = renderProps =>
   renderToString(
     <Provider store={createStore(reducers)}>
@@ -17,7 +16,7 @@ renderProps &&
   `<!doctype html>
 					<html>
 						<header>
-							<link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
+							<link href="https://fonts.googleapis.com/css?family=Oswald|Roboto+Slab|Raleway" rel="stylesheet">
 							${ env === 'production' && '<link href = "bundle.css" rel = "stylesheet">' || ''}
 							<title>My Universal App</title>
 						</header>

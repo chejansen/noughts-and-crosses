@@ -1,28 +1,15 @@
 import React from 'react';
 import r from 'ramda';
 import { connect } from 'react-redux'
+import Square from '../square';
 
 const mapIndexed = r.addIndex(r.map);
 
-const filledSquare = v =>
-  <div className = { v === 1 ? 'nought' : 'cross'}/>
-
-const Square = ( v, i, setSquare) => {
-  return <div
-    onClick = {() => setSquare(i)}
-    key = {i}
-    className = 'square'
-  >
-    { v && filledSquare(v)}
-  </div>
-}
-
-
-const Grid = ({ grid, setSquare }) => {
+const Grid = ({ grid, setSquare, comboMap,  }) => {
   return (
-    <div className = 'container'>
-      {mapIndexed((v, i) => Square(v, i, setSquare), grid)}
-    </div>
+      <div className='container'>
+        {mapIndexed((v, i) => Square(v, i, setSquare, comboMap), grid)}
+      </div>
   )
 }
 
@@ -36,7 +23,9 @@ const setSquare = index =>
   })
 
 const mapDispatchToProps = dispatch => ({
-    setSquare: index => {dispatch(setSquare(index))}
-  })
+  setSquare: index => {
+    dispatch(setSquare(index))
+  }
+})
 
 export default connect(mapStateToProps, mapDispatchToProps)(Grid)
