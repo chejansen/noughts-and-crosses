@@ -1,7 +1,7 @@
 {
-  "name": "basic-universal",
+  "name": "noughts-and-crosses",
   "version": "0.0.1",
-  "description": "Basic universal react app",
+  "description": "Noughts and crosses in a universal react app",
   "main": "dist/index.js",
   "scripts": {
     "start": "nf --env dev.env start",
@@ -15,7 +15,7 @@
       "stage-0"
     ]
   },
-  "author": "",
+  "author": "Che Jansen <che@imaginatewebsites.com.au>",
   "license": "ISC",
   "repository": {},
   "dependencies": {
